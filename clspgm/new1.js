@@ -63,12 +63,14 @@
 
 
 
-function sample(n){
-    i=parseInt(document.getElementById("fno").value)
-    r=0
-    do {
-        r *= i;
-        i--;
+function sample(){
+    a=parseInt(document.getElementById("fno").value)
+    fact=1
+    i=1
+    do{
+        fact=fact*i
+        document.getElementById("h1").innerHTML=fact
+        i++
     }
-    while (i <= n);
+    while(i<=a)
 }
