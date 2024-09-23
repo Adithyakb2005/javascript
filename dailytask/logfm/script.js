@@ -18,11 +18,12 @@ function valid() {
     }
 
     
-    const phonePattern = /^[0-9]{10}$/;
+    const phonePattern = /^[6-9][0-9]{9}$/;
     if (!phonePattern.test(phno)) {
         document.getElementById('phno_error').textContent = 'Please enter a valid 10-digit phone number.';
         isValid = false;
     }
+
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
