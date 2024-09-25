@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="table.js" ></script>
-    <!-- <style>
+    <style>
         table {
             border-collapse: collapse;
             width: 70%;
@@ -13,51 +12,83 @@
             margin-left: 300px;
             
         }
-        th {
+        th ,td{
             border: 1px solid #000;
             padding: 8px;
             text-align: left;
             width: 30px;
             height: 30px;
         }
-        td{
-            border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
-            width: 150px;
-            height: 150px;  
+        #submit {
+            
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
         }
-        input,label {
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-bottom: 10px;
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
-    </style> -->
+
+        button {
+            
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- <table id="dataTable">
+    <table id="dataTable">
         <thead>
             <tr>
-                <th>ID</th>
+                
                 <th>Name</th>
                 <th>Age</th>
+                <th>Place</th>
             </tr>
         </thead>
         <tbody>
             
         </tbody>
     </table>
-    <div>
-        <label for="text1">id</label>
-        <input type="text" id="text1">
-    </div>
-    <div></div>
-        <label for="text1">name</label>
-        <input type="text" id="text1">
-    </div>
-        <label for="text1">age</label>
-        <input type="text" id="text1">
+    <form id="submit">
+        Name<input type="text" id="name">
+        Age<input type="number" id="age">
+        Place<input type="text" id="place">
         <button>submit</button>
-    </div> -->
+
+    </form>
+    <form id="edit">
+        Name<input type="text" id="name">
+        Age<input type="number" id="age">
+        Place<input type="text" id="place">
+        <button>edit</button>
+
+    </form>
+
+    <script src="table.js" ></script>
+
 </body>
 </html>
