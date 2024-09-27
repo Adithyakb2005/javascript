@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Promo Bar */
+.promo_bar {
+    background-color: #eea7b0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav_links a:hover {
+    color: #ff4081;
+}
+
+/* Logo */
+.logo img {
+    width: 150px;
+}
+
+/* Search Box */
+.search_box {
+    display: flex;
+    align-items: center;
+}
+
+.search_box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #ff0050;
+}
+
+/* Social Icons */
+.nav_icons a {
+    color: #333;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.nav_icons a:hover {
+    color: #ff4081;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('/images/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+    padding: 15px 30px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #ff0050;
+}
+
+/* Category Section */
+.savings {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category {
+    width: 22%;
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.category .imge img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.category .p-adj p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+}
