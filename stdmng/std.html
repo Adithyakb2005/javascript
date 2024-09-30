@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            height: 100vh; 
+            justify-content: center; 
+        }
+
+        table {
+            margin-bottom: 20px; 
+            border-collapse: collapse;
+            width: 80%; 
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f9fa;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="email"],
+        form input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        #output {
+            margin-top: 20px;
+            white-space: pre-wrap; 
+        }
+    </style>
+</head>
+<body>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <form id="form">
+        <label for="id">Id</label>
+        <input type="number" id="id" required>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="Course">Course</label>
+        <input type="text" id="Course" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="output"></div>
+
+    <script src="std.js"></script>
+</body>
+</html>
