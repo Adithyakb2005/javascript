@@ -1,8 +1,9 @@
-d=[]
+d=[{id:1,name:'anu',age:19,email:'anu@gamil.com',course:'js',date:'20/02/2024'},{id:2,name:'anju',age:18,email:'anju@gamil.com',course:'python',date:'10/02/2024'},{id:3,name:'manu',age:20,email:'manu@gamil.com',course:'html',date:'28/02/2024'}]
+let editIndex=null;
 function display(){
     const s_var=document.querySelector('#studenttable tbody')
     s_var.innerHTML=''
-    d.forEach(element=>{
+    d.forEach((element,index)=>{
         const t_row=document.createElement('tr')
 
         const s_id=document.createElement('td')

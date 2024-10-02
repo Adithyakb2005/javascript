@@ -20,8 +20,7 @@ body {
     top: 2%;
     left: 35%;
 }
-
-/* Navbar Styling */
+/* navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,6 +29,7 @@ body {
     padding: 10px 20px;
     color: white;
     height: 90px;
+    
 }
 
 .navbar .logo {
@@ -41,6 +41,7 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
+
 }
 
 .nav-link a {
@@ -49,6 +50,7 @@ body {
     font-weight: bold;
     padding: 10px;
     transition: background-color 0.3s;
+    align-items: center;
 }
 
 .nav-link a:hover {
@@ -371,22 +373,22 @@ body {
     color: #fff;
 }
 
-/* Responsive Adjustments for Footer */
+
 @media (max-width: 768px) {
     .footer-links {
-        flex-direction: column; /* Stack links on smaller screens */
-        gap: 10px; /* Adjust gap */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .footer-social {
-        flex-direction: column; /* Stack social icons on smaller screens */
-        gap: 10px; /* Adjust gap */
+        flex-direction: column; 
+        gap: 10px; 
     }
 }
 
 @media (max-width: 576px) {
     .navbar {
-        flex-direction: column; /* Stack navbar items */
+        flex-direction: column;
         align-items: flex-start; /* Align items to start */
         height: auto; /* Allow height to adjust */
     }
