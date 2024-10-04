@@ -112,70 +112,46 @@ body {
     color: rgb(231, 41, 149);
 }
 
-/* Hero Section Styling */
-.hero {
-    background-image: url('/images/hero-section-img.jpg'); /* Background image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative; /* For positioning overlay */
+.conatiner2{
+    height:80vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.c2img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.c2div{
+position: absolute;
+top:10vh;
+left:20px;
+color: white;
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
-    z-index: 1; /* Ensure overlay is behind text */
+.c2div p{
+    font-size: 60px;
+    margin-left: 40px;
 }
-
-.hero-content {
-    position: relative; /* Allow z-index to work */
-    z-index: 2; /* Bring the content above the overlay */
-    max-width: 800px; /* Maximum width of content */
-    padding: 20px; /* Add padding for better spacing */
+.c2div h3{
+    font-size: 50px;
+    margin-left: 40px;
 }
-
-.hero-content h1 {
-    font-size: 50px; /* Main heading size */
-    margin: 0 0 20px 0; /* Margin for spacing */
+ul{
+    list-style-type: none;
 }
-
-/* Hero Buttons */
-.hero-buttons {
-    display: flex; /* Flex container for buttons */
-    gap: 20px; /* Space between buttons */
-    justify-content: center; /* Center the buttons */
-    margin-top: 20px; /* Margin above buttons */
+li{
+    margin-top: 20px;
 }
-
-.hero-buttons .btn {
-    padding: 10px 30px; /* Button padding */
-    background-color: #fff; /* White background */
-    color: #6c6a6a; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s, color 0.3s; /* Transition effect */
-    border-radius: 5px; /* Rounded corners */
+.c2div button{
+    height: 40px;
+    width:20vw;
+    color: grey;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 30px;
 }
-
-.hero-buttons .btn:hover {
-    background-color: #555; /* Dark background on hover */
-    color: #fff; /* White text on hover */
-}
-
-.c2img {
-    display: none; /* Hide this image or adjust as needed */
-}
-
 /* Responsive adjustments for the hero section */
 @media (max-width: 768px) {
     .hero {
@@ -187,55 +163,45 @@ body {
     }
 }
 
-/* Carousel Section */
-.savings {
-    padding: 60px 20px; /* Add padding for spacing */
-    background-color: white; /* Background color */
+/* container3 */
+.container3{
+    height:auto;
+    width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    gap:20px;
+    margin-top: 50px;
+    /* margin-left: 10px; */
+    /* background-color:aliceblue; */
 }
-
-.carousel {
-    margin: 0 auto; /* Center the carousel */
+.c3child{
+    background-color: aqua;
+    min-width: 13vw;
+    max-height:13vw;
+    margin-bottom: 70px;
+    border-radius: 360px;
+    text-align: center;
 }
-
-.categories {
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center items */
-    flex-wrap: wrap; /* Allow wrapping of categories */
+.c3child img{
+    width: 100%;
+    height: 100%;
+    border-radius: 360px;
 }
-
-.category {
-    text-align: center; /* Center the text */
-    margin: 10px; /* Space around categories */
-}
-
-.imge {
-    width: 120px; /* Fixed width for images */
-    height: 120px; /* Fixed height for images */
-    border-radius: 50%; /* Circular images */
-    overflow: hidden; /* Hide overflow */
-    display: flex; /* Center content */
-    align-items: center; /* Vertical center */
-    justify-content: center; /* Horizontal center */
-    border: 2px solid #ddd; /* Light border */
-}
-
-.category img {
-    width: 100%; /* Full width for images */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover to fill the area */
-    transition: transform 0.3s; /* Add transition effect */
-}
-
-.category img:hover {
-    transform: scale(1.05); /* Scale image on hover */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark background for controls */
-    border-radius: 50%; /* Round controls */
-    padding: 10px; /* Padding around controls */
-}
+.container3::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(145, 142, 142);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(54, 54, 54);
+  }
 
 /* Responsive Styles for Carousel Section */
 @media (max-width: 768px) {

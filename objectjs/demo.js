@@ -25,9 +25,9 @@
 
 // error handling
 
-try {
-    alertt('welcome')
-} catch (error) {
-    console.log('error');
+// try {
+//     alertt('welcome')
+// } catch (error) {
+//     console.log('error');
     
-}
+// }
