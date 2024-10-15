@@ -8,131 +8,431 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="navbar-logo">
-        <img src="./images/Croma_Logo_acrkvn.svg" alt="">
-    </div>
-    <div class="menu">
-        <div class="menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
-            <span>Menu</span>
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./images/Croma_Logo_acrkvn.svg" alt="Croma Logo" class="img-fluid"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/menu_icon.svg" alt="Menu Icon"> Menu
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#"><img src="./image/crown.svg" alt="" width="30px"> Exclusive at Croma</a></li>
+                        <hr>
+                        
+
+                        <li><a class="dropdown-item" href="#">Top Brands</a></li>
+                        
+                        <hr>
+                        <li><a class="dropdown-item" href="#">Croma Store Locator</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                        <hr>
+                        <b class="px-3">Shop by Category</b>
+                        <hr>
+                       
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Television & Accessories</a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">All Telivitions & Accsseories  </a></li>
+                                <li><a class="dropdown-item" href="#">Nested Action 2</a></li>
+                                <li><a class="dropdown-item" href="#">Nested Action 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            
+            <div class="d-flex col-12 col-md-6 mx-auto">
+                <form class="input-group">
+                    <input type="text" class="form-control" placeholder="What are you looking for?" aria-label="Search">
+                    <img src="/images/search-icon.png" alt="Search Icon" class="input-group-text">
+                </form>
+            </div>
+
+           
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#"><img src="./images/location.svg" alt="Location Icon"> Mumbai, 400049</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="/images/user.svg" alt="User Icon"></a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/shopping_cart_.svg" alt="Cart Icon"></a>
+                </li>
+            </ul>
         </div>
-        <ul id="menu-dropdown" class="menu-dropdown">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
     </div>
-    <div>
-        <input type="text" placeholder="What are you looking for ?">
+</nav>
+
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/HP_Festive_1Oct2024_rbm6uc.webp" class="d-block w-100" alt="...">
     </div>
-    <div class="icons">
-        <div class="location">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 4.5 4.8 9.88 6.35 11.71.32.38.89.38 1.21 0C14.2 18.88 19 13.5 19 9c0-3.86-3.14-7-7-7zm0 10c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/></svg>
-            <span>Mumbai, 400049</span>
-        </div>
-        <div>
-            <img src="./images/user.svg" alt="">
-        </div>
-        <div>
-            <img src="./images/shopping_cart_.svg" alt="">
-        </div>
+    <div class="carousel-item">
+      <img src="./images/HP_Rotating_FOD_OP_8Oct2024_rcwlsr.webp" class="d-block w-100" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="./images/HP_Rotating_FOD_TV_8Oct2024_qbw0cm.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/HP_Rotating_FOD_AC_8Oct2024_g1cnf7.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/HP_Rotating_FOD_Geysers_8Oct2024_yw7ngq.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/HP_Rotating_FOD_GoPro_8Oct2024_f4wrst.webp" class="d-block w-100" alt="...">
+    </div>
+   
+    <div class="carousel-item">
+      <img src="./images/HP_Rotating_FOD_Sony_8Oct2024_f8gyjc.webp" class="d-block w-100" alt="...">
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/HP_Festive_1Oct2024_rbm6uc.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/HP_Rotating_FOD_OP_8Oct2024_rcwlsr.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/HP_Rotating_FOD_TV_8Oct2024_qbw0cm.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/HP_Rotating_FOD_AC_8Oct2024_g1cnf7.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/HP_Rotating_FOD_Geysers_8Oct2024_yw7ngq.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/HP_Rotating_FOD_GoPro_8Oct2024_f4wrst.webp" class="d-block w-100" alt="...">
-          </div>
-         
-          <div class="carousel-item">
-            <img src="./images/HP_Rotating_FOD_Sony_8Oct2024_f8gyjc.webp" class="d-block w-100" alt="...">
-          </div>
-          
+      <div class="caro1">
+        <div class="container1">
+          <div class="cont11"><img src="./images/TV_vdemgc.webp" alt="tv"></div>
+          <div class="cont11"><img src="./images/D_Geyser_i5frr1.webp" alt="geyser"></div>
+          <div class="cont11"><img src="./images/Home_theatres_kpwvft.webp" alt="home theater"></div>
+          <div class="cont11"><img src="./images/Ref_biysg7.webp" alt="ref"></div>
+          <div class="cont11"><img src="./images/Accessories_kefony.webp" alt="Accessories"></div>
+          <div class="cont11"><img src="./images/Air_Conditioner_a4hg1z.webp" alt="Air_Conditioner"></div>
+          <div class="cont11"><img src="./images/Cameras_a6n2jy.webp" alt="cameras"></div>
+          <div class="cont11"><img src="./images/Grooming_vvxudd.webp" alt="Grooming"></div>
+          <div class="cont11"><img src="./images/Head_set_xjj934.webp" alt="Head_set"></div>
+          <div class="cont11"><img src="./images/Kitchen_Appliances_yhzevo.webp" alt="Kitchen_Appliances"></div>
+          <div class="cont11"><img src="./images/Laptops_pzewpv.webp" alt="carosel2_Laptops"></div>
+          <div class="cont11"><img src="./images/Microwaves_otd6qq.webp" alt="carosel2_Microwaves"></div>
+          <div class="cont11"><img src="./images/Speaker_g2mbgn.webp" alt="carosel2_Speaker"></div>
+          <div class="cont11"><img src="./images/Tablets_yzod4f.webp" alt="carosel2_Tablets"></div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-<div class="cbody">
-  <div class="carousel">
-    <div class="arrow">&lt;</div>
-    <div class="icon-container">
-        <div class="icon">
-            <img src="./images/TV_vdemgc.webp" alt="tv">
-        </div>
-        <div class="icon">
-            <img src="./images/D_Geyser_i5frr1.webp" alt="geyser">
-        </div>
-        <div class="icon">
-            <img src="./images/Home_theatres_kpwvft.webp" alt="home theater">
-        </div>
-        <div class="icon">
-            <img src="./images/Ref_biysg7.webp" alt="ref">
-        </div>
-        <div class="icon">
-            <img src="./images/Accessories_kefony.webp" alt="Accessories">
-        </div>
-        <div class="icon">
-            <img src="./images/Air_Conditioner_a4hg1z.webp" alt="Air_Conditioner">
-        </div>
-        <div class="icon">
-            <img src="./images/Cameras_a6n2jy.webp" alt="cameras">
-        </div>
-        <div class="icon">
-            <img src="./images/Grooming_vvxudd.webp" alt="Grooming">
-        </div>
-        <div class="icon">
-            <img src="./images/Head_set_xjj934.webp" alt="Head_set">
-        </div>
-        <div class="icon">
-            <img src="./images/Kitchen_Appliances_yhzevo.webp" alt="Kitchen_Appliances">
-        </div>
-        <div class="icon">
-          <img src="./images/Laptops_pzewpv.webp" alt="carosel2_Laptops">
-      </div>
-      <div class="icon">
-        <img src="./images/Microwaves_otd6qq.webp" alt="carosel2_Microwaves">
-    </div>
-    <div class="icon">
-      <img src="./images/Speaker_g2mbgn.webp" alt="carosel2_Speaker">
-   </div>
-   <div class="icon">
-    <img src="./images/Tablets_yzod4f.webp" alt="carosel2_Tablets">
-   </div>
-    </div>
-    <div class="arrow">&gt;</div>
-</div>
-</div>    
 
-<div class="banner">
-  <img src="/images/banner1.png" alt="banner">
+<div class="banner1">
+  <div class="banner-section">
+   
+    <div class="banner-card">
+      <img src="./images/neu_offers_desk_tkq4lf.webp" alt="Bank Logo">
+    </div>
+
+   
+    <div class="banner-card">
+      <img src="./images/HP_2Split_MFYMP_Brands_HDFC_ICIC_30May2024_kzbaou.webp" alt="Bank Logo">
+    </div>
+  </div>
 </div>
+
+<div class="container">
+  <h2>Exciting Bank Offers For You</h2>
+  <div class="offers-section">
+    
+    <div class="offer-card">
+      <img src="./images/HP_2Split_MFYMP_Fedrel1_29April2024_anwuvc.webp" alt="Bank Logo">
+    </div>
+
+    
+    <div class="offer-card">
+      <img src="./images/HP_2Split_MFYMP_Federal2_29April2024_grvn1a.webp" alt="Bank Logo">
+    </div>
+  </div>
+</div>
+
+<div class="whats-hot">
+  <h2>What's Hot</h2>
+  <div class="cards-container">
+      <div class="card">
+          <img src="./images/HP_DOTD_Redmi_9Oct2024_vzwrhi.webp" alt="Neckbands & Earbuds">
+      </div>
+      <div class="card">
+          <img src="./images/HP_DOTD_Ref_9Oct2024_c9hlvj.webp" alt="Airwraps, Trimmers">
+      </div>
+      <div class="card">
+          <img src="./images/HP_DOTD_VC_9Oct2024_zuxlka.webp" alt="Refrigerators">
+      </div>
+      <div class="card">
+          <img src="./images/HP_DOTD_Nothing_9Oct2024_fkwbp5.webp" alt="PlayStation 5 Slim">
+      </div>
+  </div>
+</div>
+
+<div class="limited_time_deal">
+  <h2>Limited Time Deal</h2>
+  <div class="offers_section">
+    
+    <div class="offercard">
+      <img src="./images/HP_CC_TV_7oct2024_nvi6iy.webp" alt="Bank Logo"class="img-fluid">
+    </div>
+
+    
+    <div class="offercard">
+      <img src="./images/HP_CC_HA_8oct2024_bbwfxv.webp" alt="Bank Logo">
+    </div>
+  </div>
+</div>
+
+<div class="croma_collection">
+  <div class="collection_section">
+    <div class="collection_banner">
+      <img src="./images/LP_OL_7oct2024_dzoqwk.webp" alt="Bank Logo">
+    </div>
+  </div>
+</div>
+
+<div class="no_more_worry_section">
+  <h2>No More Worrying About Your Appliances</h2>
+  <div class="pic_section">
+    <div class="banner_img">
+      <img src="./images/HP_SP_ZipCare_4Oct2024_zjnaqj.webp" alt="Bank Logo">
+    </div>
+  </div>
+</div>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="/images/carosel3-img1.webp" class="d-block" alt="iPhone Image">
+          <div class="carousel-content">
+              <h2>Simple hair straightener care and maintenance tips to keep in mind</h2>
+              <p>Follow these simple tips to make your hair-styling tools last longer</p>
+              <a href="#" class="btn-read">Read Now</a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="/images/carosel3-img2.webp" class="d-block" alt="iPhone Image 2">
+          <div class="carousel-content">
+              <h2>Explore the New iPhone 15 Series</h2>
+              <p>Discover all the latest features that make the iPhone 15 a must-have.</p>
+              <a href="#" class="btn-read">Learn More</a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="/images/carosel3-img3.webp" class="d-block" alt="iPhone Image 3">
+          <div class="carousel-content">
+              <h2>Sony Bravia 4K smart TV range launched with AI capabilities</h2>
+              <p>'Cinema is coming home' with Sony's latest Bravia televisions</p>
+              <a href="#" class="btn-read">Check Details</a>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="Deals_Of_The_Day">
+  <h2>Deals Of The Day</h2>
+  <div class="deal-container">
+      <div class="cards">
+          <img src="./images/HP_New-at-Croma_Access_09Oct2024_q2mwad.webp" alt="Neckbands & Earbuds">
+      </div>
+      <div class="cards">
+          <img src="./images/HP_New-at-Croma_GoPro_09Oct2024_n67fek.webp" alt="Airwraps, Trimmers">
+      </div>
+      <div class="cards">
+          <img src="./images/HP_New-at-Croma_Laptops_09Oct2024_i9tsxx.webp" alt="Refrigerators">
+      </div>
+      <div class="cards">
+          <img src="./images/HP_New-at-Croma_TV_09Oct2024_xknf7e.webp" alt="PlayStation 5 Slim">
+      </div>
+  </div>
+</div>
+
+<div class="experience_croma_section">
+  <h2>Experience Croma On Tata Neu!</h2>
+  <div class="pic">
+    <div class="imge">
+      <img src="./images/HP_Neubanner_18April24.png_h4axzq.webp" alt="Bank Logo" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<div class="exclusively_container">
+  <div class="title">Exclusively Curated For You</div>
+  <div class="icon-row">
+      <div class="icon-box">
+          <img src="/images/exclusively_guarented_img1.webp" alt="Croma Collections">
+        
+      </div>
+      <div class="icon-box">
+          <img src="/images/exclusively_guarented_img2.webp" alt="Top Shelf">
+
+      </div>
+      <div class="icon-box">
+          <img src="/images/exclusively_guarented_img3.webp" alt="Croma Express">
+        
+      </div>
+      <div class="icon-box">
+          <img src="/images/exclusively_guarented_img4.webp" alt="EMI Store">
+
+      </div>
+      <div class="icon-box">
+          <img src="/images/exclusively_guarented_img5.webp" alt="Deals Corner">
       
+      </div>
+      <div class="icon-box">
+          <img src="/images/exclusively_guarented_img6.webp" alt="Deals of the Week">
+  
+      </div>
+      <div class="icon-box">
+          <img src="/images/exclusively_guarented_img7.webp" alt="E-Waste Disposal">
+  
+      </div>
+  </div>
+</div>
+
+<div class="last_banner">
+  <div class="banners">
+    <!-- First  Card -->
+    <div class="banner_s">
+      <img src="/images/croma_gift_card.webp" alt="Bank Logo">
+    </div>
+
+    <!-- Second  Card -->
+    <div class="banner_s">
+      <img src="/images/croma_include.webp" alt="Bank Logo" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<div class="why_croma_section">
+  <h2>Why Croma?</h2>
+  <div class="why_croma_pic">
+    <div class="image">
+      <img src="/images/Why-Croma_img.webp" alt="Bank Logo">
+    </div>
+  </div>
+</div>
+<div class="last_carosel">
+  <div class="last_caro">
+    <div class="conts"><img src="/images/last_carosel_img1.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img2.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img3.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img4.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img5.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img6.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img7.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img8.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img9.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img10.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img11.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img12.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img13.webp" alt=""></div>
+    <div class="conts"><img src="/images/last_carosel_img14.webp" alt=""></div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-row">
+      
+      <div class="footer-column">
+          <h5>CONNECT WITH US</h5>
+          <input type="email" class="form-control" placeholder="Enter Email ID">
+          <div class="social-icons">
+              <img src="/images/footer_icons.png" alt="">
+          </div>
+          <div class="copyright">
+            © Copyright 2023 Croma. All rights reserved
+        </div>
+        <hr>
+      </div>
+
+      
+      <div class="footer-column">
+          <h5>USEFUL LINKS</h5>
+          <div class="footer-links">
+            <div class="footer_col">
+              <div class="footer_col1">
+                <a href="#">About Croma</a><br>
+                <a href="#">Help And Support</a><br>
+                <a href="#">FAQs</a><br>
+                <a href="#">Buying Guide</a><br>
+                <a href="#">Return Policy</a><br>
+                <a href="#">B2B Orders</a><br>
+                <a href="#">Store Locator</a><br>
+                <a href="#">E-Waste</a><br>
+                <a href="#">Franchise Opportunity</a><br>
+              </div>
+                <div class="footer_col2">
+                  <a href="#">Site Map</a><br>
+                <a href="#">Careers At Croma</a><br>
+                <a href="#">Terms Of Use</a><br>
+                <a href="#">Disclaimer</a><br>
+                <a href="#">Privacy Policy</a><br>
+                <a href="#">Unboxed</a><br>
+                <a href="#">Gift Card</a><br>
+                <a href="#">Croma E-Star</a><br>
+                </div>
+                
+            </div>
+            
+          </div>
+      </div>
+
+  
+      <div class="footer-column">
+          <h5>PRODUCTS</h5>
+          <div class="footer-links">
+            <div class="footer_colm">
+              <div class="footer_colm1">
+                <a href="#">Televisions & Accessories</a><br>
+              <a href="#">Home Appliances</a><br>
+              <a href="#">Phones & Wearables</a><br>
+              <a href="#">Computers & Tablets</a><br>
+              <a href="#">Kitchen Appliances</a><br>
+              <a href="#">Audio & Video</a><br>
+              <a href="#">Health & Fitness</a><br>
+              </div>
+              <div class="footer_colm2">
+                <a href="#">Grooming & Personal Care</a><br>
+              <a href="#">Cameras & Accessories</a><br>
+              <a href="#">Smart Devices</a><br>
+              <a href="#">Gaming</a><br>
+              <a href="#">Accessories</a><br>
+              <a href="#">Top Brands</a><br>
+              </div>
+              
+            </div>
+              
+          </div>
+      </div>
+  </div>
+  
+</footer>
+
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
