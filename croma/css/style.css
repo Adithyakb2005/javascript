@@ -166,7 +166,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width:768px)and(max-width: 576px) {
   
   .banner-card {
     flex-direction: column; 
@@ -230,7 +230,7 @@ body {
     }
   }
 
-  @media (max-width: 576px) {
+  @media (min-width:768px)and(max-width: 576px) {
     h2 {
       font-size: 1.5rem;
     }
@@ -283,7 +283,7 @@ body {
         width: calc(50% - 20px);
     }
 }
-@media (max-width: 480px) {
+@media (min-width:768px)and(max-width: 576px){
     .card {
         width: 100%;
     }
@@ -341,7 +341,7 @@ body {
     }
   }
 
-  @media (max-width: 576px) {
+  @media (min-width:768px)and(max-width: 576px) {
     .limited_time_deal h2 {
       font-size: 1.5rem;
     }
@@ -400,7 +400,7 @@ body {
     }
   }
 
-  @media (max-width: 576px) {
+  @media (min-width:768px)and(max-width: 576px) {
     .collection_banner {
       flex-direction: column; 
       text-align: center;
@@ -471,7 +471,7 @@ body {
     }
   }
 
-  @media (max-width: 576px) {
+  @media (min-width:768px)and(max-width: 576px) {
     .no_more_worry_section h2 {
       font-size: 1.5rem;
     }
@@ -581,7 +581,7 @@ body {
       width: calc(50% - 20px);
   }
 }
-@media (max-width: 480px) {
+@media (min-width:768px)and(max-width: 480px) {
   .cards {
       width: 100%;
   }
@@ -641,7 +641,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width:768px)and(max-width: 576px) {
   .experience_croma_section h2 {
     font-size: 1.5rem;
   }
@@ -712,7 +712,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width:768px)and(max-width: 576px) {
   .exclusively_container{
     height: 100px;
     width: 100%;
@@ -778,7 +778,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width:768px)and(max-width: 576px) {
   
   .banner_s {
     flex-direction: column; 
@@ -843,7 +843,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width:768px)and(max-width: 576px) {
   .why_croma_section h2 {
     font-size: 1.5rem;
   }
@@ -948,7 +948,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width:768px)and(max-width: 480px) {
   .social-icons {
       justify-content: center;
   }
